@@ -57,7 +57,7 @@
             "default_value": "[TR/EU] SunucumBurada Rust Vanilla Sunucusu",
             "user_viewable": true,
             "user_editable": true,
-            "rules": "required|string|max:40",
+            "rules": "required|string|max:70",
             "field_type": "text"
         },
         {
