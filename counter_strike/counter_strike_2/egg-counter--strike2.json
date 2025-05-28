@@ -144,7 +144,7 @@
             "name": "Oyun modu (Gamemode)",
             "description": "Bir sonraki turun başlangıcında ayarlanacak Oyun Modunu ve Oyun Türünü tanımlar.\r\nÖrnekler:\r\n\r\nRekabetçi:\r\ngame_mode 1\r\ngame_type 0\r\n\r\nYoldaş:\r\ngame_mode 2\r\ngame_type 0\r\n\r\nBasit Eğlence:\r\ngame_mode 0\r\ngame_type 0\r\n\r\nÖlüm Maçı:\r\ngame_mode 2\r\ngame_type 1\r\n\r\nSilah Yarışı:\r\ngame_mode 0\r\ngame_type 1\r\n\r\nÖzel:\r\ngame_mode 0\r\ngame_type 3",
             "env_variable": "GAME_MODE",
-            "default_value": "1",
+            "default_value": "0",
             "user_viewable": true,
             "user_editable": true,
             "rules": "required|string",
