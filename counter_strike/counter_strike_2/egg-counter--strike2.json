@@ -134,7 +134,7 @@
             "name": "RCON Şifresi",
             "description": "Sunucu üzerindeki yönetici komutlarına erişim kazanmak için gereken şifre.",
             "env_variable": "RCON_PASSWORD",
-            "default_value": "",
+            "default_value": "SBCS2RCONPASS",
             "user_viewable": true,
             "user_editable": true,
             "rules": "required|alpha_dash|between:1,30",
