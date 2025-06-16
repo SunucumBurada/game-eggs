@@ -5,9 +5,9 @@
         "update_url": null
     },
     "exported_at": "2024-12-19T11:42:05+02:00",
-    "name": "ARK: Survival Ascended",
+    "name": "ARK Survival Ascended",
     "author": "blood@darkartsgaming.com",
-    "description": "ARK is reimagined from the ground-up into the next-generation of video game technology with Unreal Engine 5! Form a tribe, tame & breed hundreds of unique dinosaurs and primeval creatures, explore, craft, build, and fight your way to the top of the food-chain. Your new world awaits!",
+    "description": "ARK, Unreal Engine 5 ile yeni nesil video oyunu teknolojisinde baştan aşağı yeniden tasarlandı! Bir kabile kurun, yüzlerce benzersiz dinozoru ve ilkel yaratığı evcilleştirin ve üretin, keşfedin, üretin, inşa edin ve besin zincirinin zirvesine çıkmak için savaşın. Yeni dünyanız sizi bekliyor!",
     "features": [
         "steam_disk_space"
     ],
@@ -31,8 +31,8 @@
     },
     "variables": [
         {
-            "name": "Server Map",
-            "description": "Available Maps: TheIsland_WP",
+            "name": "Sunucu Haritası",
+            "description": "Mevcut Haritalar: TheIsland_WP",
             "env_variable": "SERVER_MAP",
             "default_value": "TheIsland_WP",
             "user_viewable": true,
@@ -41,18 +41,18 @@
             "field_type": "text"
         },
         {
-            "name": "Server Name",
-            "description": "\"Unofficial\" dedicated server name",
+            "name": "Sunucu Adı",
+            "description": "Sunucu adı",
             "env_variable": "SESSION_NAME",
-            "default_value": "A Pterodactyl Hosted Server",
+            "default_value": "SunucumBurada - ARK Survival Ascended Sunucusu",
             "user_viewable": true,
             "user_editable": true,
             "rules": "required|string|max:256",
             "field_type": "text"
         },
         {
-            "name": "Auto-update server",
-            "description": "This is to enable auto-updating for servers on restart\/re-install.",
+            "name": "Otomatik Güncelleme",
+            "description": "Bu, sunucular için otomatik güncellemeyi etkinleştirmek içindir.\r\n\r\nVarsayılan değer 0'dır. Güncellemek için 1 olarak ayarlayın.",
             "env_variable": "AUTO_UPDATE",
             "default_value": "1",
             "user_viewable": true,
@@ -62,7 +62,7 @@
         },
         {
             "name": "Battle Eye",
-            "description": "Enable BattleEye \/ Anti-Cheat",
+            "description": "BattleEye \/ Anti-Cheat",
             "env_variable": "BATTLE_EYE",
             "default_value": "1",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "field_type": "text"
         },
         {
-            "name": "App ID",
-            "description": "app id required for server download\/updates. end users should not see this.",
+            "name": "Uygulama ID",
+            "description": "sunucu indirme\/güncellemeleri için uygulama kimliği gereklidir.",
             "env_variable": "SRCDS_APPID",
             "default_value": "2430930",
             "user_viewable": false,
@@ -81,8 +81,8 @@
             "field_type": "text"
         },
         {
-            "name": "Additional Arguments (PARAMS)",
-            "description": "params (?ServerPassword=...) are supported here but params need to be touching. (i.e): ?ServerPassword=MyP4SsWoRd?ServerAdminPassword=sUpRp4ssW0rd",
+            "name": "Ek Argümanlar (PARAMS)",
+            "description": "Ek argümanlar (?ServerPassword=...) burada desteklenir. Örnek: ?ServerPassword=MyP4SsWoRd?ServerAdminPassword=sUpRp4ssW0rd",
             "env_variable": "ARGS_PARAMS",
             "default_value": "",
             "user_viewable": true,
@@ -91,8 +91,8 @@
             "field_type": "text"
         },
         {
-            "name": "Max Players",
-            "description": "Specifies the maximum amount of players able to join the server.",
+            "name": "Maksimum Oyuncu",
+            "description": "Sunucuya katılabilecek maksimum oyuncu sayısını belirtir.",
             "env_variable": "MAX_PLAYERS",
             "default_value": "70",
             "user_viewable": true,
@@ -101,8 +101,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Admin Password",
-            "description": "Used for RCON (remote and in-browser console) as well as in-game EnableCheats",
+            "name": "Admin Şifresi",
+            "description": "RCON (uzaktan ve tarayıcı içi konsol) ve oyun içi EnableCheats için kullanılır.",
             "env_variable": "ARK_ADMIN_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -111,8 +111,8 @@
             "field_type": "text"
         },
         {
-            "name": "Additional Arguments (FLAGS)",
-            "description": "flags (-UseBattleEye) are supported here without them touching. (i.e): -crossplay -mods=1234,1235,1236",
+            "name": "Ek Argümanlar (FLAGS)",
+            "description": "Ek argümanlar (-UseBattleEye) burada desteklenir. Örnek: -crossplay -mods=1234,1235,1236",
             "env_variable": "ARGS_FLAGS",
             "default_value": "",
             "user_viewable": true,
@@ -121,8 +121,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server PvE",
-            "description": "ON = Player-vs-Environment (PvE), OFF = Player-vs-Player (PvP); Default is ON",
+            "name": "Sunucu PvE",
+            "description": "ON = Oyuncu-vs-Çevre (PvE), OFF = Oyuncu-vs-Oyuncu (PvP); Varsayılan değer ON",
             "env_variable": "SERVER_PVE",
             "default_value": "1",
             "user_viewable": true,
@@ -131,8 +131,8 @@
             "field_type": "text"
         },
         {
-            "name": "Server Password",
-            "description": "required password to enter the server, leave blank for public server",
+            "name": "Sunucu Şifresi",
+            "description": "Belirtilirse, oyuncular sunucuya katılmak için bu parolayı sağlamalıdır.",
             "env_variable": "SERVER_PASSWORD",
             "default_value": "",
             "user_viewable": true,
@@ -142,7 +142,7 @@
         },
         {
             "name": "RCON Port",
-            "description": "required for console commands and proper server shutdown (saveworld\/exit), doesn't have to be open to the public",
+            "description": "Rcon araçları tarafından kullanılan ARK rcon portu.",
             "env_variable": "RCON_PORT",
             "default_value": "37015",
             "user_viewable": true,
@@ -151,8 +151,8 @@
             "field_type": "text"
         },
         {
-            "name": "MOD IDs",
-            "description": "https:\/\/www.curseforge.com\/ark-survival-ascended ; ProjectID is is the MOD_ID on the right-side of the mod-view page ; leave blank to disable mods ; separate only by comma ( , ) without spaces! (i.e.) 1234,1235,1236",
+            "name": "MOD ID'leri",
+            "description": "https:\/\/www.curseforge.com\/ark-survival-ascended ; ProjectID, mod görüntüleme sayfasının sağ tarafındaki MOD_ID'dir; modları devre dışı bırakmak için boş bırakın; boşluk bırakmadan yalnızca virgül ( , ) ile ayırın! Örnek: 1234,1235,1236",
             "env_variable": "MOD_IDS",
             "default_value": "",
             "user_viewable": true,
